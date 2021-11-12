@@ -6,11 +6,11 @@
         <meta property="description" content="This is the data repository for the 2019 Novel Coronavirus Visual Dashboard operated by the Johns Hopkins University Center for Systems Science and Engineering (JHU CSSE). Also, Supported by ESRI Living Atlas Team and the Johns Hopkins University Applied Physics Lab (JHU APL)." />
         <style>
           body {
-            margin: 2em;
+            margin: 1em;
           }
           .world > a {
             background-color: transparent !important;
-            position: fixed !important;
+            position: absolute;
             top: 0;
             right: 0;
             border: 0;
@@ -27,7 +27,7 @@
 </head>
 <body>
 <div class="world">
-  <a class="github" href="https://github.com/CSSEGISandData/COVID-19" title="Find this project on GitHub">
+  <a class="github" href="https://github.com/araguaci/floripa-surf-club-surf-school-360" title="Find this project on GitHub">
       <svg data-v-265482bf="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-labelledby="github" role="presentation" data-v-139c290f="">
           <title id="github" lang="en">github icon</title>
           <g fill="currentColor"><path d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z"></path></g>
@@ -522,10 +522,8 @@ This list includes a complete list of all sources ever used in the data set, sin
 </li>
 </ul>
 <p><b>Embed our dashboard into your webpage:</b></p>
-<div style="width:100%; overflow:auto;">
 <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css"><span class="hljs-selector-class">.embed-container</span> {<span class="hljs-attribute">position</span>: relative; <span class="hljs-attribute">padding-bottom</span>: <span class="hljs-number">80%</span>; <span class="hljs-attribute">height</span>: <span class="hljs-number">0</span>; <span class="hljs-attribute">max-width</span>: <span class="hljs-number">100%</span>;} <span class="hljs-selector-class">.embed-container</span> <span class="hljs-selector-tag">iframe</span>, <span class="hljs-selector-class">.embed-container</span> <span class="hljs-selector-tag">object</span>, <span class="hljs-selector-class">.embed-container</span> <span class="hljs-selector-tag">iframe</span>{<span class="hljs-attribute">position</span>: absolute; <span class="hljs-attribute">top</span>: <span class="hljs-number">0</span>; <span class="hljs-attribute">left</span>: <span class="hljs-number">0</span>; <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>; <span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;} <span class="hljs-selector-tag">small</span>{<span class="hljs-attribute">position</span>: absolute; <span class="hljs-attribute">z-index</span>: <span class="hljs-number">40</span>; <span class="hljs-attribute">bottom</span>: <span class="hljs-number">0</span>; <span class="hljs-attribute">margin-bottom</span>: -<span class="hljs-number">15px</span>;}</span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"embed-container"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">iframe</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"500"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"400"</span> <span class="hljs-attr">frameborder</span>=<span class="hljs-string">"0"</span> <span class="hljs-attr">scrolling</span>=<span class="hljs-string">"no"</span> <span class="hljs-attr">marginheight</span>=<span class="hljs-string">"0"</span> <span class="hljs-attr">marginwidth</span>=<span class="hljs-string">"0"</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"COVID-19"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://www.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">iframe</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 </code></pre>
-</div>
 <p><b>Acknowledgements:</b>
 We are grateful to the following organizations for supporting our Center’s COVID-19 mapping and modeling efforts:
 Financial Support: Johns Hopkins University, National Science Foundation (NSF), Bloomberg Philanthropies, Stavros Niarchos Foundation;
